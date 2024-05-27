@@ -69,7 +69,7 @@ export async function onRequest(context) {  // Contents of context object
         //get time
         let time = new Date().getTime();
         
-        let apikey=env.ModerateContentApiKey
+        let apikey= null //env.ModerateContentApiKey
         
             if(typeof apikey == "undefined" || apikey == null || apikey == ""){
                 
